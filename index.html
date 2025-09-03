@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <title>Heidi Main Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-    }
+    html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* pushes footer down */
+}
+
+.footer {
+  margin-top: auto; /* keeps footer at bottom */
+}
+
 
     /* Navigation bar */
     .navbar {
@@ -85,10 +97,10 @@
   <!-- Navigation -->
   <div class="navbar">
     <div class="nav-links">
-      <a href="Challenges.html">Sub Page 1</a>
-      <a href="Family.html">Sub Page 2</a>
-      <a href="Friendship.html">Sub Page 3</a>
-      <a href="Nature.html">Sub Page 4</a>
+      <a href="Challenges.html">Challenges & Growth</a>
+      <a href="Family.html">Family & Home</a>
+      <a href="Friendship.html">Friendship & Kindness</a>
+      <a href="Nature.html">Nature & Mountains</a>
     </div>
     <div class="logo">L</div>
   </div>
