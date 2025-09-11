@@ -1,0 +1,192 @@
+:root{
+  --bg: #ffffff;
+  --muted-bg: #f3f7f0;
+  --accent: #6b4b75;        /* purple-ish */
+  --accent-2: #e0b16a;      /* warm secondary */
+  --text: #333333;
+  --muted: #6f6f6f;
+  --card: #ffffff;
+  --radius: 12px;
+  --gap: 1rem;
+  --max-width: 1100px;
+  --flow: 1.125rem;
+  --shadow: 0 6px 20px rgba(19,19,19,0.06);
+  --container-padding: 1.25rem;
+  --h1: 1.8rem;
+  --h2: 1.2rem;
+  --base-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Reset + base */
+* { box-sizing: border-box; }
+html,body { height:100%; }
+body{
+  margin: 0 auto;
+  padding-top: 80px;
+  font-family: var(--base-font);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--muted-bg) 100%);
+  color:var(--text);
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* Layout container */
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+/* Header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: white; 
+  z-index: 1000;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+  padding: .75rem 0;
+}
+.brand{
+  display:flex;
+  gap:.75rem;
+  align-items:center;
+  text-decoration:none;
+  color:var(--text);
+}
+.logo{
+  width:44px;
+  height:44px;
+  border-radius:10px;
+  background: linear-gradient(135deg,var(--accent), #985f9d);
+  display:grid;
+  place-items:center;
+  color:white;
+  font-weight:700;
+  box-shadow: var(--shadow);
+}
+.site-title{
+  font-weight:700;
+  font-size:1rem;
+  letter-spacing:.2px;
+}
+
+/* Navigation */
+.nav{
+  display:flex;
+  gap:.5rem;
+  align-items:center;
+}
+.nav a{
+  text-decoration:none;
+  font-weight:600;
+  padding:.5rem .9rem;
+  border-radius:10px;
+  transition: background .2s ease, color .2s ease;
+}
+.nav a.btn-ghost{
+  background:transparent;
+  color:var(--text);
+}
+.nav a.btn-ghost:hover{
+  background:var(--muted-bg);
+}
+.nav a.btn-primary{
+  background:var(--accent);
+  color:white;
+  box-shadow: 0 6px 18px rgba(107,75,117,0.12);
+}
+.nav a.btn-primary:hover{
+  background:#55395d;
+}
+
+/* Hero */
+.hero {
+  min-height: 50vh; /* takes up half of the viewport height */
+  background-image: url("images/heidi-bg.jpeg");
+  background-repeat: repeat;     /* makes the image repeat */
+  background-size: contain;      /* keeps the image big but not cropped */
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: var(--radius);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: white;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #f3f3f3;
+}
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+.image-row img {
+  width: 270px;
+  height: 270px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Card / subpage grid */
+.grid{
+  display:grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.card{
+  background:var(--card);
+  border-radius: var(--radius);
+  padding:1rem;
+  box-shadow: var(--shadow);
+  min-height: 120px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.card .title{ font-weight:700; color:var(--text); margin-bottom:.3rem; }
+.card p{ flex:1; color:var(--muted); font-size:.95rem; }
+.card a.btn{ margin-top:.5rem; align-self:flex-start; }
+
+/* Footer */
+.footer{
+  margin-top: auto; /* keeps footer at bottom */
+  padding-top:1rem;
+  border-top:1px solid rgba(0,0,0,0.08);
+  color:var(--muted);
+  font-size:.9rem;
+  text-align:center;
+}
+.footer a{ color:var(--accent); text-decoration:none; }
+.footer a:hover{ text-decoration:underline; }
+
+/* Responsive tweaks */
+@media (max-width: 600px){
+  .header{ flex-direction:column; align-items:flex-start; }
+  .nav{ flex-wrap:wrap; }
+}
