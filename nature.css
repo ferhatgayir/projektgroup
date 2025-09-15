@@ -1,0 +1,9 @@
+.baslik {
+    position: relative;
+    background-image: url('depositphotos_35739163-stock-photo-snowy-mountains-in-the-swiss.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000;
