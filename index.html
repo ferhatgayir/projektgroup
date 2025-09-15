@@ -1,6 +1,107 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Heidi Main Page</title>
+  <style>
+    html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* pushes footer down */
+}
+
+.footer {
+  margin-top: auto; /* keeps footer at bottom */
+}
+
+
+    /* Navigation bar */
+    .navbar {
+      background-color: #1a5a74;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      background-color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1a5a74;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Main content */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+    }
+
+    .text-box {
+      flex: 1;
+      margin-right: 20px;
+      border: 1px solid black;
+      padding: 15px;
+    }
+
+    .text-box b {
+      font-size: 18px;
+    }
+
+    .image-box {
+      flex: 1;
+    }
+
+    .image-box img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    body {
+      text-align: center;
+      background-color: #faedc7;
+      color: #455f77;
+      font-family: 'Germania Regular', sans-serif;
+      font-size: 1.8em;
+      padding-left: 5em;
+      padding-right: 5em;
+      letter-spacing: 1px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1a5a74;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .footer b {
+      text-decoration: underline;
+    }
+  </style>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Heidi</title>
@@ -71,7 +172,7 @@ Im Laufe der Jahre ist Heidi zu einer dauerhaften kulturellen Ikone geworden. Si
 </main>
 <!-- Footer -->
   <div class="footer">
-    <b>Created by:</b> Nazifa, Ferhat, Kononenko
+    <b>Created by:</b> Ferhat, Kononenko
   </div>
   </body>
 </html>
