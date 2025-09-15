@@ -109,7 +109,7 @@ body{
 /* Hero */
 .hero {
   min-height: 50vh; /* takes up half of the viewport height */
-  background-image: url("images/heidi-bg.jpeg");
+  background-image: url("../images/heidi-bg.jpeg");
   background-repeat: repeat;     /* makes the image repeat */
   background-size: contain;      /* keeps the image big but not cropped */
   background-position: top center;
