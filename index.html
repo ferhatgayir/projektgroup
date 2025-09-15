@@ -1,123 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Heidi Main Page</title>
-  <style>
-    html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  flex: 1; /* pushes footer down */
-}
-
-.footer {
-  margin-top: auto; /* keeps footer at bottom */
-}
-
-
-    /* Navigation bar */
-    .navbar {
-      background-color: #1a5a74;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav-links a {
-      background-color: #fff;
-      padding: 8px 14px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #1a5a74;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-    }
-
-    /* Main content */
-    .content {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px;
-    }
-
-    .text-box {
-      flex: 1;
-      margin-right: 20px;
-      border: 1px solid black;
-      padding: 15px;
-    }
-
-    .text-box b {
-      font-size: 18px;
-    }
-
-    .image-box {
-      flex: 1;
-    }
-
-    .image-box img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    /* Footer */
-    .footer {
-      background-color: #1a5a74;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-    }
-
-    .footer b {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Heidi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <div class="navbar">
-    <div class="nav-links">
-      <a href="Challenges.html">Challenges & Growth</a>
-      <a href="FamilyDE.html">Family & Home</a>
-      <a href="Friendship.html">Friendship & Kindness</a>
-      <a href="Nature.html">Nature & Mountains</a>
-    </div>
-    <div class="logo">L</div>
-  </div>
+  <!-- Header -->
+  <header class="container header">
+  <a class="brand" href="https://de.wikipedia.org/wiki/Heidi_(Roman)">
+    <div class="logo">H</div>
+    <div class="site-title">Heidi</div>
+  </a>
+  <nav class="nav">
+    <a class="btn btn-ghost" href="Nature.html">Natur</a>
+    <a class="btn btn-ghost" href="FamilyDE.html">Familie</a>
+    <a class="btn btn-ghost" href="Friendship.html">Freundschaft</a>
+    <a class="btn btn-ghost" href="Challenges.html">Herausforderungen</a>
+    <a class="btn btn-primary" href="index_FR.html">FR</a>
+  </nav>
+</header>
 
-  <!-- Main Content -->
-  <div class="content">
-    <div class="text-box">
-      <b>Heidi</b>, Challenges, Challenges, Challenges…  
-    </div>
-    <div class="image-box">
-      <img src="Heidi.jpeg" alt="Heidi and Grandfather">
-    </div>
-  </div>
 
-  <!-- Footer -->
+  <!-- Main -->
+  <main class="container">
+    <section class="hero">
+     <!-- <h1>Welcome to Heidi Website</h1> -->
+    
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="title">Heidi</div>
+         <p>Heidi ist ein klassischer Kinderroman, der 1880 von der Schweizer Autorin Johanna Spyri geschrieben wurde. Er erzählt die Geschichte eines jungen Waisenmädchens namens Heidi, das zu ihrem Großvater in die Schweizer Alpen geschickt wird. Zunächst ist ihr Großvater mürrisch und distanziert, aber Heidis freundliche und fröhliche Art erwärmt langsam sein Herz. Der Roman betont Themen wie Familie, Freundschaft und den positiven Einfluss der Natur auf die persönliche Entwicklung. Durch Heidis Geschichte sehen die Leser, wie Liebe, Fürsorge und eine Verbindung zur Natur Glück und Heilung bringen können.
+Das Leben in den Bergen bringt Heidi viel Freude und Abenteuer. Sie freundet sich mit Peter, einem jungen Ziegenhirten, an und zeigt tiefe Fürsorge für andere, darunter ihre kranke Freundin Clara. Der Roman kontrastiert Heidis freies und einfaches Leben in den Alpen mit den Einschränkungen und Schwierigkeiten der Stadt und zeigt, wie wichtig es ist, der Natur nahe zu sein. Heidis Optimismus und Mitgefühl machen sie zu einer Quelle der Inspiration und Freude für alle, denen sie begegnet, und veranschaulichen die Kraft der Freundlichkeit und Empathie.
+Im Laufe der Jahre ist Heidi zu einer dauerhaften kulturellen Ikone geworden. Sie hat unzählige Adaptionen in Film, Fernsehen und Theater inspiriert und die Schönheit der Schweizer Berge einem weltweiten Publikum nähergebracht. Die universellen Themen der Geschichte – Familie, Mut, Freundschaft und die einfachen Freuden des Lebens – finden weiterhin Anklang bei Lesern jeden Alters. Heidis Geschichte bleibt zeitlos und erinnert uns daran, wie wichtig Liebe, Natur und es sich selbst treu zu bleiben sind.
+      </p>
+    </section>
+
+<main>
+
+    <!-- Three small images below the text -->
+    <div class="image-row">
+      <a href="Nature.html">
+      <figure>
+        <img src="images/Chalanges.jpeg" alt="Heidi Bild 1">
+        <figcaption>
+          <p>Ein friedlicher Moment...</p>
+        </figcaption>      
+      </figure>
+</a>
+<a href="Family.html">
+      <figure>
+        <img src="images/Family.jpeg" alt="Heidi Bild 2">
+        <figcaption>
+          <p>Farben der Natur...</p>
+        </figcaption>
+      </figure>
+      </a>
+<a href="Friendship.html">
+      <figure>
+        <img src="images/Friendship.jpeg" alt="Heidi Bild 3">
+        <figcaption>
+          <p>Heidi & Peter...</p>
+        </figcaption>
+      </figure>
+      </a>
+    </div>
+</main>
+<!-- Footer -->
   <div class="footer">
     <b>Created by:</b> Nazifa, Ferhat, Kononenko
   </div>
-</body>
+  </body>
 </html>
